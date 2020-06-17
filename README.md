@@ -59,6 +59,6 @@ So a good workflow will be something like this (after the project is open in you
 1. Click on the button you are studying
 1. Step through the handler in your debugger until you reach an error or something that does not work correctly
 1. Go to VSCode and make one small change to try fixing the bug, save your changes!
-1. Return to the browser and click the same button
+1. Return to the browser, refresh, and click the same button
 1. Step through to the line of code that caused problems last time, is it fixed?
 1. repeat!
