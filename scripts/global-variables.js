@@ -1,3 +1,3 @@
 console.log('--- loading: global variables')
 
-let range = 0;
+let range = 4;
