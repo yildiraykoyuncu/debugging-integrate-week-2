@@ -1,30 +1,28 @@
+'use strict';
 // fix the bugs
 
 console.log('--- loading: repeat string');
 
 function repeatStringHandler() {
-  'use strict';
   debugger;
+  console.log('\n--- action: repeat string ---');
+  console.log('range:', typeof range, '\n', range);
+  console.log('stringToRepeat:', typeof stringToRepeat, '\n', stringToRepeat);
 
   // read inputs from user
-  const stringToRepeat = alert('enter a string to repeat');
-
-  // before moving on ... type check!
-  if (typeof stringToRepeat !== 'String') { throw new TypeError(); }
+  const stringToRepeat = prompt('enter a string to repeat');
+  console.log('stringToRepeat:', typeof stringToRepeat, '\n', stringToRepeat);
+  if (stringToRepeat !== null) {
+    return;
+  }
 
   // perform core logic
   let repeatedString;
   for (let i = 1; i < range; i++) {
     repeatedString += repeatedString;
   }
+  console.log('repeatedString:', typeof repeatedString, '\n', repeatedString);
 
   // alert result for the user
   alert(stringToRepeat);
-
-  // log action for the developer
-  console.log('\n--- action: repeat string ---');
-  console.log('range:', typeof range, '\n', range);
-  console.log('stringToRepeat:', typeof stringToRepeat, '\n', stringToRepeat);
-  console.log('repeatedString:', typeof repeatedString, '\n', repeatedString);
-
 }

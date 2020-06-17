@@ -1,13 +1,16 @@
+'use strict';
 // write the logic
 
 console.log('--- loading: evens or odds');
 
 function evensOrOddsHandler() {
-  'use strict';
   debugger;
+  console.log('\n--- action: sum numbers in range ---');
+  console.log('range:', typeof range, '\n', range);
 
   // read user input
   const displayEvens = confirm('would you like to see even numbers?');
+  console.log('displayEvens:', typeof displayEvens, '\n', displayEvens);
 
   // perform core logic
   /* create a comma-separated list if all the evens or odds in the range
@@ -23,14 +26,8 @@ function evensOrOddsHandler() {
   for (_; _; _) {
 
   }
+  console.log('listedNumbers:', typeof listedNumbers, '\n', listedNumbers);
 
   // alert result for the user
   alert(listedNumbers);
-
-  // log action for the developer
-  console.log('\n--- action: sum numbers in range ---');
-  console.log('displayEvens:', typeof displayEvens, '\n', displayEvens);
-  console.log('range:', typeof range, '\n', range);
-  console.log('listedNumbers:', typeof listedNumbers, '\n', listedNumbers);
-
 }
