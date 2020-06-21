@@ -4,25 +4,29 @@
 console.log('--- loading: repeat string');
 
 function repeatStringHandler() {
-  debugger;
-  console.log('\n--- action: repeat string ---');
-  console.log('range:', typeof range, '\n', range);
-  console.log('stringToRepeat:', typeof stringToRepeat, '\n', stringToRepeat);
+    debugger;
+    console.log('\n--- action: repeat string ---');
 
-  // read inputs from user
-  const stringToRepeat = prompt('enter a string to repeat');
-  console.log('stringToRepeat:', typeof stringToRepeat, '\n', stringToRepeat);
-  if (stringToRepeat !== null) {
-    return;
-  }
+    let range = Number(prompt('How many times you want to repeat?'));
 
-  // perform core logic
-  let repeatedString;
-  for (let i = 1; i < range; i++) {
-    repeatedString += repeatedString;
-  }
-  console.log('repeatedString:', typeof repeatedString, '\n', repeatedString);
+    console.log('range:', typeof range, '\n', range);
 
-  // alert result for the user
-  alert(stringToRepeat);
+
+    // read inputs from user
+    const stringToRepeat = prompt('enter a string to repeat');
+    console.log('stringToRepeat:', typeof stringToRepeat, '\n', stringToRepeat);
+
+    if (stringToRepeat === null) {
+        return;
+    }
+
+    // perform core logic
+    let repeatedString = "";
+    for (let i = 1; i < range; i++) {
+        repeatedString += stringToRepeat;
+    }
+    console.log('repeatedString:', typeof repeatedString, '\n', repeatedString);
+
+    // alert result for the user
+    alert(repeatedString);
 }

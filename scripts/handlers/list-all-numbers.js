@@ -4,21 +4,26 @@
 console.log('--- loading: list all numbers');
 
 function listAllNumbersHandler() {
-  debugger;
-  console.log('\n--- action: list all numbers ---');
-  console.log('range:', typeof range, '\n', range);
+    debugger;
+    console.log('\n--- action: list all numbers ---');
 
-  // perform core logic
-  /* create a string listing all the numbers in the range
-    ex: "1, 2, 3, 4, "
-    ex: "1, 2, 3, 4, 5, 6, "
-  */
-  let numbersList = '';
-  for (let i = _; i <= _; i++) {
-    _;
-  }
-  console.log('numbersList:', typeof numbersList, '\n', numbersList);
+    let range = Number(prompt('Enter last number of the list'));
 
-  // alert result for the user
-  alert(numbersList);
+    console.log('range:', typeof range, '\n', range);
+
+    // perform core logic
+    /* create a string listing all the numbers in the range
+      ex: "1, 2, 3, 4, "
+      ex: "1, 2, 3, 4, 5, 6, "
+    */
+
+
+    let numbersList = '';
+    for (let i = 1; i <= range; i++) {
+        numbersList += `${i}, `;
+    };
+    console.log('numbersList:', typeof numbersList, '\n', numbersList);
+
+    // alert result for the user
+    alert(numbersList);
 }
